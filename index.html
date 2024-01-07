@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="wetool,免费版,开心版,">
     <meta name="description" content="关于wetool商城的重要通知">
     <title>重要通知</title>
     <style>
@@ -15,7 +16,7 @@
              justify-content: center;
              align-items: center;           
         }
-        div{
+        .cantian{
             text-align: center;
         }
         p{
@@ -27,10 +28,33 @@
             width: 250px;
             height: 250px;
         }
+
+        .box{
+            
+            overflow: hidden;
+        }
+        .box-img{
+            display: block;
+            margin: auto;
+            width: 380px;
+            transform: translateY(-100%);
+            transition: 0.3s transform;
+            transition-delay: 3s;
+        }
+        .qr:hover + .box > img{
+            transform: translateY(0%);
+            transition-delay: 0s;
+        }
+        .box:hover > img{
+            transform: translateY(0%);
+            transition-delay: 0s;
+        }
+        
+
     </style>
 </head>
 <body>
-    <div>
+    <div class="cantian">
         <h1>重要通知</h1>
         <p>商店维护中...</p>
         <!-- <p>美工跑路，程序员跟着跑路，临走之前把网站也给删了！</p> -->
@@ -38,6 +62,9 @@
         <!-- <img src="https://alime-customer-upload-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/customer-upload/783/1702885783308_83b05964664943bd8e9b633a1215b60d.jpg" alt="落魄老板在线炒饭"> -->
         <p style="margin: 20px 0;">目前无法在线购买，请添加客服小姐姐微信直接购买！</p>
         <img class='qr' src="https://alime-customer-upload-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/customer-upload/783/1702886329735_2d60c950c57f42e2a3a9f365e99e7fed.jpg" alt="">
+        <div class="box">
+            <img class="box-img" src="https://alime-customer-upload-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/customer-upload/783/1704601791608_63284ec8a692427ca47c596f75ccce65.jpg" alt="免费支付宝红包">
+        </div>
         <!-- <p class='' style="color: red;">年底冲业一波绩，上百款软件最低价，企业微信、抖音、快手、QQ、你想要的都有！</p> -->
         <!-- <p class='' style="color: red;">另外本店还有，企业微信、抖音、快手、QQ、你想要的都有！</p> -->
     </div>
